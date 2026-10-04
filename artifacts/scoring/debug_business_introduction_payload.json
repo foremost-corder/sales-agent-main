@@ -1,0 +1,41 @@
+{
+  "section": "business_introduction",
+  "period_call_count": 140,
+  "relevant_call_count": 18,
+  "evidence_count": 18,
+  "payload_character_sizes": {
+    "section": 88,
+    "rules": 221,
+    "calls": 954,
+    "candidate_evidence": 8226,
+    "review_issues": 2,
+    "output_schema": 811,
+    "total_serialized": 10399
+  },
+  "call_value_character_sizes": {
+    "call_id": 684,
+    "external_call_id": 180,
+    "call_date": 216,
+    "sales_stage": 108,
+    "analysis_run_id": 684,
+    "analysis_degraded": 82
+  },
+  "evidence_value_character_sizes": {
+    "evidence_id": 1146,
+    "retrieved_for_rule_id": 414,
+    "source": 276,
+    "call_id": 684,
+    "analysis_run_id": 684,
+    "fact_id": 684,
+    "document_id": 276,
+    "trigger_validation_status": 144,
+    "fact_type": 298,
+    "speaker": 108,
+    "fact": 2920,
+    "turn_no": 41,
+    "quote": 2952,
+    "grounding": 126,
+    "confidence": 54,
+    "similarity": 142
+  }
+}

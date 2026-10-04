@@ -1,0 +1,18 @@
+{
+  "endpoint": "https://lingsuan.org/v1",
+  "model": "gpt-5.6-terra",
+  "tests": [
+    {
+      "name": "chat_production_review_schema",
+      "request_succeeded": true,
+      "elapsed_ms": 4396,
+      "valid": true,
+      "parsed": {
+        "status": "completed",
+        "reasonable": true,
+        "issues": [],
+        "summary": "Review completed; no issues identified."
+      }
+    }
+  ]
+}

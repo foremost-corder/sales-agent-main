@@ -1,0 +1,430 @@
+{
+  "schema_version": "single-call-whiteboard-score-v2",
+  "call_id": "test-call",
+  "source_sales_stage": "销售线索",
+  "call_level": "initial_contact",
+  "level_confidence": 0.99,
+  "level_rationale": "本通电话主要是供应商首次联系并介绍硬件设备合作及租用模式，客户尚未进入具体需求、方案或合同洽谈阶段，整体目标属于初次接触和业务介绍。",
+  "level_evidence": [
+    {
+      "turn_no": 6,
+      "source_speaker_label": "用户1",
+      "speaker": "sales",
+      "quote": "我这边是这个长沙本地的一家 IT 设备供应商来电"
+    },
+    {
+      "turn_no": 11,
+      "source_speaker_label": "用户1",
+      "speaker": "sales",
+      "quote": "就比方说咱们后面有呃这个新员工入职"
+    },
+    {
+      "turn_no": 20,
+      "source_speaker_label": "用户1",
+      "speaker": "sales",
+      "quote": "一个月的话"
+    },
+    {
+      "turn_no": 25,
+      "source_speaker_label": "用户0",
+      "speaker": "customer",
+      "quote": "我们这些硬件都有啊"
+    },
+    {
+      "turn_no": 31,
+      "source_speaker_label": "用户1",
+      "speaker": "sales",
+      "quote": "那我给您加个微信呗。 0:01:13"
+    }
+  ],
+  "executed_modules": [
+    "opening_discovery",
+    "solution_offer",
+    "objection_handling",
+    "relationship_interaction"
+  ],
+  "total_score": 60,
+  "maximum_applicable_positive_score": 180,
+  "minimum_applicable_negative_score": -30,
+  "speaker_assignments": [
+    {
+      "source_speaker_label": "用户0",
+      "speaker": "customer"
+    },
+    {
+      "source_speaker_label": "用户1",
+      "speaker": "sales"
+    }
+  ],
+  "dimensions": [
+    {
+      "dimension_id": "business_introduction",
+      "name": "介绍业务",
+      "applicable": true,
+      "assessable": true,
+      "present": true,
+      "whiteboard_status": "hit",
+      "review_status": "accepted",
+      "matched_count": 1,
+      "points_per_match": 10,
+      "maximum_points": 10,
+      "score": 10,
+      "rationale": "销售明确介绍了公司是 IT 设备供应商，符合业务介绍规则。",
+      "review_rationale": "完整原文中销售明确说明自己是“长沙本地的一家 IT 设备供应商”，并补充为硬件设备业务，符合介绍IT或办公设备供应业务的标准。",
+      "evidence": [
+        {
+          "turn_no": 6,
+          "source_speaker_label": "用户1",
+          "speaker": "sales",
+          "quote": "我这边是这个长沙本地的一家 IT 设备供应商来电"
+        },
+        {
+          "turn_no": 10,
+          "source_speaker_label": "用户1",
+          "speaker": "sales",
+          "quote": "阿迪呀呃对硬件设备这一块的。 0:00:23"
+        }
+      ]
+    },
+    {
+      "dimension_id": "prior_context_bridge",
+      "name": "承上启下了",
+      "applicable": true,
+      "assessable": true,
+      "present": true,
+      "whiteboard_status": "hit",
+      "review_status": "accepted",
+      "matched_count": 1,
+      "points_per_match": 10,
+      "maximum_points": 10,
+      "score": 10,
+      "rationale": "销售提及此前从钱总处听到的信息，并据此继续推进当前沟通。",
+      "review_rationale": "销售提到“之前有听说过”且钱总曾提及后续会有新增，属于引用此前获得的客户相关信息，并据此继续推进合作沟通，符合承上启下标准。",
+      "evidence": [
+        {
+          "turn_no": 27,
+          "source_speaker_label": "用户1",
+          "speaker": "sales",
+          "quote": "因为之前有听说过那个听钱总说过"
+        },
+        {
+          "turn_no": 28,
+          "source_speaker_label": "用户1",
+          "speaker": "sales",
+          "quote": "后面是会有新增嘛。 0:01:05"
+        }
+      ]
+    },
+    {
+      "dimension_id": "discovery_information",
+      "name": "挖到了需求或信息",
+      "applicable": true,
+      "assessable": true,
+      "present": true,
+      "whiteboard_status": "hit",
+      "review_status": "accepted",
+      "matched_count": 2,
+      "points_per_match": 10,
+      "maximum_points": 50,
+      "score": 20,
+      "rationale": "获得了现有设备及换新需求现状、联系人职责和决策链信息两个独立类别。",
+      "review_rationale": "客户明确说明现有硬件齐全、暂不需要更换，提供了设备现状信息；随后说明自己不负责该事项、需要找老板，提供了联系人职责及决策链信息。两类信息彼此独立，命中2次有完整上下文支持。",
+      "evidence": [
+        {
+          "turn_no": 25,
+          "source_speaker_label": "用户0",
+          "speaker": "customer",
+          "quote": "我们这些硬件都有啊"
+        },
+        {
+          "turn_no": 35,
+          "source_speaker_label": "用户0",
+          "speaker": "customer",
+          "quote": "我们呢我们不负责这一块的"
+        }
+      ]
+    },
+    {
+      "dimension_id": "value_proposition",
+      "name": "介绍卖点/优势",
+      "applicable": true,
+      "assessable": true,
+      "present": true,
+      "whiteboard_status": "hit",
+      "review_status": "accepted",
+      "matched_count": 4,
+      "points_per_match": 5,
+      "maximum_points": 20,
+      "score": 20,
+      "rationale": "销售介绍了免押金或零费用寄送、免费上门保修、随时退、高性价比低月租和先用后付等多个卖点，命中数按count_capped上限计为4。",
+      "review_rationale": "销售分别介绍了无需先付费用即可寄送使用、工程师免费上门售后、设备闲置时可随时退以及每月约五六十元的低月租，属于4个独立卖点，未超过上限。",
+      "evidence": [
+        {
+          "turn_no": 13,
+          "source_speaker_label": "用户1",
+          "speaker": "sales",
+          "quote": "我们是可以一分钱不收"
+        },
+        {
+          "turn_no": 16,
+          "source_speaker_label": "用户1",
+          "speaker": "sales",
+          "quote": "我们这边也都有工程师可以免费上门全包的。 0:00:40"
+        },
+        {
+          "turn_no": 19,
+          "source_speaker_label": "用户1",
+          "speaker": "sales",
+          "quote": "也是随时可以退的。 0:00:46"
+        },
+        {
+          "turn_no": 21,
+          "source_speaker_label": "用户1",
+          "speaker": "sales",
+          "quote": "大概就是五六十块钱这个样子"
+        }
+      ]
+    },
+    {
+      "dimension_id": "product_recommendation",
+      "name": "产品与配置推荐能力好",
+      "applicable": true,
+      "assessable": true,
+      "present": false,
+      "whiteboard_status": "miss",
+      "review_status": "not_required",
+      "matched_count": 0,
+      "points_per_match": 10,
+      "maximum_points": 10,
+      "score": 0,
+      "rationale": "销售提到新员工入职或新项目可能需要电脑，但没有结合具体岗位、用途或参数推荐具体设备及配置，且客户后续明确表示已有硬件并不需要更换。",
+      "review_rationale": null,
+      "evidence": []
+    },
+    {
+      "dimension_id": "price_negotiation",
+      "name": "价格洽谈与优惠引导能力好",
+      "applicable": true,
+      "assessable": true,
+      "present": true,
+      "whiteboard_status": "hit",
+      "review_status": "accepted",
+      "matched_count": 1,
+      "points_per_match": 10,
+      "maximum_points": 10,
+      "score": 10,
+      "rationale": "销售结合新员工或新项目使用电脑的场景给出了约每月五六十元的租赁报价。",
+      "review_rationale": "在说明新员工入职或新项目使用电脑的场景后，销售给出每月约五六十元的租赁报价，符合结合需求报价的标准。",
+      "evidence": [
+        {
+          "turn_no": 21,
+          "source_speaker_label": "用户1",
+          "speaker": "sales",
+          "quote": "大概就是五六十块钱这个样子"
+        }
+      ]
+    },
+    {
+      "dimension_id": "objection_resolved",
+      "name": "解决了客户异议",
+      "applicable": true,
+      "assessable": true,
+      "present": false,
+      "whiteboard_status": "miss",
+      "review_status": "not_required",
+      "matched_count": 0,
+      "points_per_match": 20,
+      "maximum_points": 20,
+      "score": 0,
+      "rationale": "客户明确表示现有硬件充足且不需要更换，销售后续仅提到听说有新增并转向添加微信、确认负责人，没有针对该异议给出具体解释或解决方案，也没有客户非负向回应。",
+      "review_rationale": null,
+      "evidence": []
+    },
+    {
+      "dimension_id": "empathy_relationship",
+      "name": "同理心好或拉近了客户关系",
+      "applicable": true,
+      "assessable": true,
+      "present": false,
+      "whiteboard_status": "review_rejected",
+      "review_status": "rejected",
+      "matched_count": 1,
+      "points_per_match": 20,
+      "maximum_points": 20,
+      "score": 0,
+      "rationale": "销售结合客户可能的人员变化、新项目和设备闲置场景说明方案价值，属于从客户使用场景出发沟通。",
+      "review_rationale": "销售虽然列举了新员工入职、人员缩减和设备闲置等假设场景，但未结合客户已表达的具体需求、岗位或困难进行适配说明，也没有明确共情、从客户角度分析或提供额外价值，现有原文不足以支持该维度。",
+      "evidence": [
+        {
+          "turn_no": 11,
+          "source_speaker_label": "用户1",
+          "speaker": "sales",
+          "quote": "就比方说咱们后面有呃这个新员工入职"
+        },
+        {
+          "turn_no": 17,
+          "source_speaker_label": "用户1",
+          "speaker": "sales",
+          "quote": "包括说您这边人员有缩减的情况下"
+        }
+      ]
+    },
+    {
+      "dimension_id": "conversation_interaction",
+      "name": "沟通互动性好",
+      "applicable": true,
+      "assessable": true,
+      "present": true,
+      "whiteboard_status": "hit",
+      "review_status": "accepted",
+      "matched_count": 1,
+      "points_per_match": 20,
+      "maximum_points": 20,
+      "score": 20,
+      "rationale": "初次联系阶段存在至少3个销售与客户之间的来回互动，且通话持续超过40秒，客户多次提供有效反馈。",
+      "review_rationale": "初次联系阶段存在多次销售与客户的连续往返，通话持续约79秒，客户在多个轮次中提供了有效反馈，满足至少3个来回及通话时长互动标准。",
+      "evidence": [
+        {
+          "turn_no": 5,
+          "source_speaker_label": "用户0",
+          "speaker": "customer",
+          "quote": "你是你是干嘛的？ 0:00:08"
+        },
+        {
+          "turn_no": 24,
+          "source_speaker_label": "用户0",
+          "speaker": "customer",
+          "quote": "没有啊"
+        },
+        {
+          "turn_no": 27,
+          "source_speaker_label": "用户1",
+          "speaker": "sales",
+          "quote": "因为之前有听说过那个听钱总说过"
+        },
+        {
+          "turn_no": 30,
+          "source_speaker_label": "用户0",
+          "speaker": "customer",
+          "quote": "这玩意还不晓得到时候好的那边有政策下来哦"
+        },
+        {
+          "turn_no": 31,
+          "source_speaker_label": "用户1",
+          "speaker": "sales",
+          "quote": "那我给您加个微信呗。 0:01:13"
+        },
+        {
+          "turn_no": 34,
+          "source_speaker_label": "用户0",
+          "speaker": "customer",
+          "quote": "没有的"
+        }
+      ]
+    },
+    {
+      "dimension_id": "contract_delivery_process",
+      "name": "签约流程和发货流程熟悉",
+      "applicable": false,
+      "assessable": false,
+      "present": false,
+      "whiteboard_status": "not_applicable",
+      "review_status": "not_required",
+      "matched_count": 0,
+      "points_per_match": 5,
+      "maximum_points": 5,
+      "score": 0,
+      "rationale": "该维度不属于本通电话层级启用的评分模块。",
+      "review_rationale": null,
+      "evidence": []
+    },
+    {
+      "dimension_id": "after_sales_solution",
+      "name": "售后问题解决好",
+      "applicable": false,
+      "assessable": false,
+      "present": false,
+      "whiteboard_status": "not_applicable",
+      "review_status": "not_required",
+      "matched_count": 0,
+      "points_per_match": 5,
+      "maximum_points": 5,
+      "score": 0,
+      "rationale": "该维度不属于本通电话层级启用的评分模块。",
+      "review_rationale": null,
+      "evidence": []
+    },
+    {
+      "dimension_id": "wechat_agreement",
+      "name": "客户愿意加微信",
+      "applicable": true,
+      "assessable": true,
+      "present": false,
+      "whiteboard_status": "miss",
+      "review_status": "not_required",
+      "matched_count": 0,
+      "points_per_match": 10,
+      "maximum_points": 10,
+      "score": 0,
+      "rationale": "销售提出加微信后，客户未明确同意，随后表示自己不负责设备并建议联系老板。",
+      "review_rationale": null,
+      "evidence": []
+    },
+    {
+      "dimension_id": "abnormal_speech",
+      "name": "语速语调异常",
+      "applicable": true,
+      "assessable": false,
+      "present": false,
+      "whiteboard_status": "unassessable",
+      "review_status": "not_required",
+      "matched_count": 0,
+      "points_per_match": -10,
+      "maximum_points": -10,
+      "score": 0,
+      "rationale": "纯TXT无法判定真实语速、音量、语调或普通话标准度。",
+      "review_rationale": null,
+      "evidence": []
+    },
+    {
+      "dimension_id": "objection_unresolved",
+      "name": "不能解决客户异议",
+      "applicable": true,
+      "assessable": true,
+      "present": true,
+      "whiteboard_status": "hit",
+      "review_status": "accepted",
+      "matched_count": 1,
+      "points_per_match": -30,
+      "maximum_points": -30,
+      "score": -30,
+      "rationale": "客户在表达现有设备充足、不需要更换后，销售没有有效回应产品需求异议，客户随后仍表示要找老板，异议未被解决。",
+      "review_rationale": "客户明确表示现有硬件充足且不需要更换。销售仅提到此前听说后续可能新增并转而请求加微信，没有针对现有设备充足这一异议给出有效解释或解决方案，异议未被解决。",
+      "evidence": [
+        {
+          "turn_no": 25,
+          "source_speaker_label": "用户0",
+          "speaker": "customer",
+          "quote": "我们这些硬件都有啊"
+        },
+        {
+          "turn_no": 27,
+          "source_speaker_label": "用户1",
+          "speaker": "sales",
+          "quote": "因为之前有听说过那个听钱总说过"
+        },
+        {
+          "turn_no": 31,
+          "source_speaker_label": "用户1",
+          "speaker": "sales",
+          "quote": "那我给您加个微信呗。 0:01:13"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "层级由当前通话原文判定；source_sales_stage 只作为来源元数据展示，不参与层级分类。",
+    "输入只有TXT转写文本，语速、音量、语调和普通话标准度不可判定；该项不加扣分。",
+    "命中项经独立证据复核；复核拒绝的项保留溯源信息但计0分。"
+  ]
+}

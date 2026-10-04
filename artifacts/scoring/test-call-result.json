@@ -1,0 +1,334 @@
+{
+  "schema_version": "single-call-whiteboard-score-v2",
+  "call_id": "test-call",
+  "source_sales_stage": "销售线索",
+  "call_level": "initial_contact",
+  "level_confidence": 0.98,
+  "level_rationale": "本通电话主要是销售方首次联系并介绍IT设备供应及灵活租赁合作模式，虽包含价格、服务和合作条件说明，但尚未进入具体需求挖掘或方案、报价异议的深入洽谈。",
+  "level_evidence": [
+    {
+      "turn_no": 6,
+      "source_speaker_label": "用户1",
+      "speaker": "sales",
+      "quote": "我这边是这个长沙本地的一家 IT 设备供应商来电"
+    },
+    {
+      "turn_no": 11,
+      "source_speaker_label": "用户1",
+      "speaker": "sales",
+      "quote": "就比方说咱们后面有呃这个新员工入职"
+    },
+    {
+      "turn_no": 14,
+      "source_speaker_label": "用户1",
+      "speaker": "sales",
+      "quote": "可以先把设备寄送给您去使用包。 0:00:34"
+    },
+    {
+      "turn_no": 23,
+      "source_speaker_label": "用户1",
+      "speaker": "sales",
+      "quote": "之前您这边有没有了解过这种模式呀？ 0:00:54"
+    }
+  ],
+  "executed_modules": [
+    "opening_discovery",
+    "relationship_interaction"
+  ],
+  "total_score": 30,
+  "maximum_applicable_positive_score": 120,
+  "minimum_applicable_negative_score": 0,
+  "speaker_assignments": [
+    {
+      "source_speaker_label": "用户0",
+      "speaker": "customer"
+    },
+    {
+      "source_speaker_label": "用户1",
+      "speaker": "sales"
+    }
+  ],
+  "dimensions": [
+    {
+      "dimension_id": "business_introduction",
+      "name": "介绍业务",
+      "applicable": true,
+      "assessable": true,
+      "present": true,
+      "whiteboard_status": "hit",
+      "review_status": "accepted",
+      "matched_count": 1,
+      "points_per_match": 10,
+      "maximum_points": 10,
+      "score": 10,
+      "rationale": "销售明确介绍公司属于 IT 设备供应商。",
+      "review_rationale": "第6轮销售明确表示自己是“IT设备供应商”，说话人角色正确，直接符合介绍公司从事IT或办公设备供应的条件。",
+      "evidence": [
+        {
+          "turn_no": 6,
+          "source_speaker_label": "用户1",
+          "speaker": "sales",
+          "quote": "我这边是这个长沙本地的一家 IT 设备供应商来电"
+        }
+      ]
+    },
+    {
+      "dimension_id": "prior_context_bridge",
+      "name": "承上启下了",
+      "applicable": true,
+      "assessable": true,
+      "present": false,
+      "whiteboard_status": "miss",
+      "review_status": "not_required",
+      "matched_count": 0,
+      "points_per_match": 10,
+      "maximum_points": 10,
+      "score": 0,
+      "rationale": "虽然提到之前听钱总说过后面会有新增，但未针对该历史关注点给出建议、方案或询问进展。",
+      "review_rationale": null,
+      "evidence": []
+    },
+    {
+      "dimension_id": "discovery_information",
+      "name": "挖到了需求或信息",
+      "applicable": true,
+      "assessable": true,
+      "present": false,
+      "whiteboard_status": "review_rejected",
+      "review_status": "rejected",
+      "matched_count": 2,
+      "points_per_match": 10,
+      "maximum_points": 50,
+      "score": 0,
+      "rationale": "销售通过提问获得了联系人在设备采购决策链中的角色，以及客户现有设备充足、暂无换新需求的信息。",
+      "review_rationale": "第32至36轮能够支持联系人不负责设备、需要找老板这一岗位或决策链信息；但第23轮及其回答“没有啊”只表明客户此前不了解该模式，不能支持“现有设备充足、暂无换新需求”。该结论实际来自第25至26轮，未被所引用的第23轮证据表达，因此匹配数量和理由不足以支持当前判定。",
+      "evidence": [
+        {
+          "turn_no": 32,
+          "source_speaker_label": "用户1",
+          "speaker": "sales",
+          "quote": "您您是负责公司呃"
+        },
+        {
+          "turn_no": 23,
+          "source_speaker_label": "用户1",
+          "speaker": "sales",
+          "quote": "之前您这边有没有了解过这种模式呀？ 0:00:54"
+        }
+      ]
+    },
+    {
+      "dimension_id": "value_proposition",
+      "name": "介绍卖点/优势",
+      "applicable": false,
+      "assessable": false,
+      "present": false,
+      "whiteboard_status": "not_applicable",
+      "review_status": "not_required",
+      "matched_count": 0,
+      "points_per_match": 5,
+      "maximum_points": 20,
+      "score": 0,
+      "rationale": "该维度不属于本通电话层级启用的评分模块。",
+      "review_rationale": null,
+      "evidence": []
+    },
+    {
+      "dimension_id": "product_recommendation",
+      "name": "产品与配置推荐能力好",
+      "applicable": false,
+      "assessable": false,
+      "present": false,
+      "whiteboard_status": "not_applicable",
+      "review_status": "not_required",
+      "matched_count": 0,
+      "points_per_match": 10,
+      "maximum_points": 10,
+      "score": 0,
+      "rationale": "该维度不属于本通电话层级启用的评分模块。",
+      "review_rationale": null,
+      "evidence": []
+    },
+    {
+      "dimension_id": "price_negotiation",
+      "name": "价格洽谈与优惠引导能力好",
+      "applicable": false,
+      "assessable": false,
+      "present": false,
+      "whiteboard_status": "not_applicable",
+      "review_status": "not_required",
+      "matched_count": 0,
+      "points_per_match": 10,
+      "maximum_points": 10,
+      "score": 0,
+      "rationale": "该维度不属于本通电话层级启用的评分模块。",
+      "review_rationale": null,
+      "evidence": []
+    },
+    {
+      "dimension_id": "objection_resolved",
+      "name": "解决了客户异议",
+      "applicable": false,
+      "assessable": false,
+      "present": false,
+      "whiteboard_status": "not_applicable",
+      "review_status": "not_required",
+      "matched_count": 0,
+      "points_per_match": 20,
+      "maximum_points": 20,
+      "score": 0,
+      "rationale": "该维度不属于本通电话层级启用的评分模块。",
+      "review_rationale": null,
+      "evidence": []
+    },
+    {
+      "dimension_id": "empathy_relationship",
+      "name": "同理心好或拉近了客户关系",
+      "applicable": true,
+      "assessable": true,
+      "present": true,
+      "whiteboard_status": "hit",
+      "review_status": "accepted",
+      "matched_count": 1,
+      "points_per_match": 20,
+      "maximum_points": 20,
+      "score": 20,
+      "rationale": "销售提出免费设备试用、免费上门服务及闲置可退等额外价值，符合通过额外价值拉近客户关系的规则。",
+      "review_rationale": "第13轮表示“一分钱不收”，结合第14至19轮的完整上下文，销售明确提供免费试用、免费上门售后及闲置可退等额外价值，符合通过额外价值拉近客户关系的条件。",
+      "evidence": [
+        {
+          "turn_no": 13,
+          "source_speaker_label": "用户1",
+          "speaker": "sales",
+          "quote": "我们是可以一分钱不收"
+        }
+      ]
+    },
+    {
+      "dimension_id": "conversation_interaction",
+      "name": "沟通互动性好",
+      "applicable": true,
+      "assessable": true,
+      "present": false,
+      "whiteboard_status": "review_rejected",
+      "review_status": "rejected",
+      "matched_count": 1,
+      "points_per_match": 20,
+      "maximum_points": 20,
+      "score": 0,
+      "rationale": "初次接触阶段存在多次销售与客户之间的来回互动，达到至少3个来回的条件。",
+      "review_rationale": "虽然通话超过40秒，但证据中的第23至24轮主要构成一次问答，后续客户多次连续发言，未形成至少3个完整来回；同时客户发言占比从完整通话内容看也不足线索阶段要求的20%，因此不能证明达到互动条件。",
+      "evidence": [
+        {
+          "turn_no": 23,
+          "source_speaker_label": "用户1",
+          "speaker": "sales",
+          "quote": "之前您这边有没有了解过这种模式呀？ 0:00:54"
+        },
+        {
+          "turn_no": 24,
+          "source_speaker_label": "用户0",
+          "speaker": "customer",
+          "quote": "没有啊"
+        },
+        {
+          "turn_no": 30,
+          "source_speaker_label": "用户0",
+          "speaker": "customer",
+          "quote": "这玩意还不晓得到时候好的那边有政策下来哦"
+        },
+        {
+          "turn_no": 34,
+          "source_speaker_label": "用户0",
+          "speaker": "customer",
+          "quote": "没有的"
+        }
+      ]
+    },
+    {
+      "dimension_id": "contract_delivery_process",
+      "name": "签约流程和发货流程熟悉",
+      "applicable": false,
+      "assessable": false,
+      "present": false,
+      "whiteboard_status": "not_applicable",
+      "review_status": "not_required",
+      "matched_count": 0,
+      "points_per_match": 5,
+      "maximum_points": 5,
+      "score": 0,
+      "rationale": "该维度不属于本通电话层级启用的评分模块。",
+      "review_rationale": null,
+      "evidence": []
+    },
+    {
+      "dimension_id": "after_sales_solution",
+      "name": "售后问题解决好",
+      "applicable": false,
+      "assessable": false,
+      "present": false,
+      "whiteboard_status": "not_applicable",
+      "review_status": "not_required",
+      "matched_count": 0,
+      "points_per_match": 5,
+      "maximum_points": 5,
+      "score": 0,
+      "rationale": "该维度不属于本通电话层级启用的评分模块。",
+      "review_rationale": null,
+      "evidence": []
+    },
+    {
+      "dimension_id": "wechat_agreement",
+      "name": "客户愿意加微信",
+      "applicable": true,
+      "assessable": true,
+      "present": false,
+      "whiteboard_status": "miss",
+      "review_status": "not_required",
+      "matched_count": 0,
+      "points_per_match": 10,
+      "maximum_points": 10,
+      "score": 0,
+      "rationale": "销售提出添加微信，但客户未明确同意，反而表示自己不负责设备这一块。",
+      "review_rationale": null,
+      "evidence": []
+    },
+    {
+      "dimension_id": "abnormal_speech",
+      "name": "语速语调异常",
+      "applicable": true,
+      "assessable": false,
+      "present": false,
+      "whiteboard_status": "unassessable",
+      "review_status": "not_required",
+      "matched_count": 0,
+      "points_per_match": -10,
+      "maximum_points": -10,
+      "score": 0,
+      "rationale": "纯TXT无法判定真实语速、音量、语调或普通话标准度。",
+      "review_rationale": null,
+      "evidence": []
+    },
+    {
+      "dimension_id": "objection_unresolved",
+      "name": "不能解决客户异议",
+      "applicable": false,
+      "assessable": false,
+      "present": false,
+      "whiteboard_status": "not_applicable",
+      "review_status": "not_required",
+      "matched_count": 0,
+      "points_per_match": -30,
+      "maximum_points": -30,
+      "score": 0,
+      "rationale": "该维度不属于本通电话层级启用的评分模块。",
+      "review_rationale": null,
+      "evidence": []
+    }
+  ],
+  "warnings": [
+    "层级由当前通话原文判定；source_sales_stage 只作为来源元数据展示，不参与层级分类。",
+    "输入只有TXT转写文本，语速、音量、语调和普通话标准度不可判定；该项不加扣分。",
+    "命中项经独立证据复核；复核拒绝的项保留溯源信息但计0分。"
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "sales_id": "001",
+  "date_from": "2026-03-02",
+  "date_to": "2026-03-06",
+  "model": "gpt-5.6-terra",
+  "policy_id": "computer-rental-key-behaviors",
+  "policy_version": "v1",
+  "knowledge_namespace": "baseline-react-v4",
+  "weekly_score": 5.08,
+  "total_points": 660,
+  "call_count": 140,
+  "scored_call_count": 130,
+  "score_coverage": 0.9286,
+  "reliability_counts": {
+    "high": 0,
+    "medium": 14,
+    "low": 126
+  },
+  "behavior_scores": [
+    {
+      "rule_id": "business_introduction",
+      "name": "介绍业务",
+      "score": 1.0,
+      "total_points": 130,
+      "hit_call_count": 13,
+      "evidence_count": 13
+    },
+    {
+      "rule_id": "prior_context_bridge",
+      "name": "承上启下",
+      "score": 0.38,
+      "total_points": 50,
+      "hit_call_count": 5,
+      "evidence_count": 5
+    },
+    {
+      "rule_id": "discovery_information",
+      "name": "挖到需求或信息",
+      "score": 0.08,
+      "total_points": 10,
+      "hit_call_count": 1,
+      "evidence_count": 1
+    },
+    {
+      "rule_id": "value_proposition",
+      "name": "介绍卖点或优势",
+      "score": 0.08,
+      "total_points": 10,
+      "hit_call_count": 2,
+      "evidence_count": 2
+    },
+    {
+      "rule_id": "product_recommendation",
+      "name": "产品与配置推荐能力好",
+      "score": 0.0,
+      "total_points": 0,
+      "hit_call_count": 0,
+      "evidence_count": 0
+    },
+    {
+      "rule_id": "price_negotiation",
+      "name": "价格洽谈与优惠引导能力好",
+      "score": 0.15,
+      "total_points": 20,
+      "hit_call_count": 2,
+      "evidence_count": 2
+    },
+    {
+      "rule_id": "objection_resolved",
+      "name": "解决了客户异议",
+      "score": 0.0,
+      "total_points": 0,
+      "hit_call_count": 0,
+      "evidence_count": 0
+    },
+    {
+      "rule_id": "empathy_relationship",
+      "name": "同理心好或拉近客户关系",
+      "score": 0.15,
+      "total_points": 20,
+      "hit_call_count": 1,
+      "evidence_count": 1
+    },
+    {
+      "rule_id": "conversation_interaction",
+      "name": "沟通互动性好",
+      "score": 3.08,
+      "total_points": 400,
+      "hit_call_count": 20,
+      "evidence_count": 20
+    },
+    {
+      "rule_id": "contract_delivery_process",
+      "name": "签约流程和发货流程熟悉",
+      "score": 0.0,
+      "total_points": 0,
+      "hit_call_count": 0,
+      "evidence_count": 0
+    },
+    {
+      "rule_id": "after_sales_solution",
+      "name": "售后问题解决好",
+      "score": 0.0,
+      "total_points": 0,
+      "hit_call_count": 0,
+      "evidence_count": 0
+    },
+    {
+      "rule_id": "wechat_agreement",
+      "name": "客户愿意加微信",
+      "score": 0.15,
+      "total_points": 20,
+      "hit_call_count": 2,
+      "evidence_count": 2
+    },
+    {
+      "rule_id": "abnormal_speech",
+      "name": "语速语调异常",
+      "score": 0.0,
+      "total_points": 0,
+      "hit_call_count": 0,
+      "evidence_count": 0
+    },
+    {
+      "rule_id": "objection_unresolved",
+      "name": "不能解决客户异议",
+      "score": 0.0,
+      "total_points": 0,
+      "hit_call_count": 0,
+      "evidence_count": 0
+    }
+  ],
+  "review": {
+    "status": "completed",
+    "reasonable": false,
+    "repairs": 1,
+    "issue_count": 7,
+    "issue_counts_by_rule": {
+      "price_negotiation": 2,
+      "prior_context_bridge": 5
+    }
+  },
+  "model_call_count": 18
+}
