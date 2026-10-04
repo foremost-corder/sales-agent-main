@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="本地销售通话智能 Agent" />
+    <title>Sales Agent</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar">
+        <div class="brand-row">
+          <div class="brand-mark" aria-hidden="true">S</div>
+          <div>
+            <strong>Sales Agent</strong>
+            <span>本地工作台</span>
+          </div>
+        </div>
+        <button class="new-chat" id="new-chat" type="button">
+          <span aria-hidden="true">＋</span> 新建对话
+        </button>
+        <div class="sidebar-label">对话记录</div>
+        <nav class="conversation-list" id="conversation-list" aria-label="对话记录"></nav>
+        <div class="sidebar-footer">
+          <span class="status-dot" id="status-dot" aria-hidden="true"></span>
+          <span id="service-status">正在检查服务…</span>
+        </div>
+      </aside>
+
+      <main class="chat-panel">
+        <header class="chat-header">
+          <button class="menu-button" id="menu-button" type="button" aria-label="打开对话列表">☰</button>
+          <div>
+            <h1 id="chat-title">新对话</h1>
+            <p>销售通话智能助手</p>
+          </div>
+          <div class="mode-pill" id="mode-pill">本地服务</div>
+        </header>
+
+        <section class="messages" id="messages" aria-live="polite">
+          <div class="empty-state" id="empty-state">
+            <div class="empty-icon">S</div>
+            <h2>今天想分析什么？</h2>
+            <p>选择已有对话，或直接发送消息开始一段新对话。</p>
+          </div>
+        </section>
+
+        <footer class="composer-wrap">
+          <form class="composer" id="message-form">
+            <textarea
+              id="message-input"
+              rows="1"
+              maxlength="20000"
+              placeholder="输入消息，Enter 发送，Shift + Enter 换行"
+              aria-label="消息内容"
+            ></textarea>
+            <button id="send-button" type="submit" aria-label="发送消息">↑</button>
+          </form>
+          <p class="composer-note">AI 可能会出错，请核对重要业务信息。</p>
+        </footer>
+      </main>
+    </div>
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+    <script src="/static/app.js" defer></script>
+  </body>
+</html>
